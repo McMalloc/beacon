@@ -1,0 +1,144 @@
+//additional reset
+nav, #toc {
+  ul {
+    margin-left: -40px;
+  }
+}
+
+@media (max-width: 991px) {
+  #toc {
+    position: relative!important;
+  }
+}
+
+blockquote {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+pre {
+  background-color: white;
+  border: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+nav {
+  ul {
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 0;
+
+    li {
+      display: inline;
+      margin-right: 24px;
+
+      a {
+        text-decoration: none;
+        top: 30px;
+        padding: 4px;
+        color: black;
+
+        &:hover {
+          background-color: black;
+          color: white;
+
+        }
+      }
+    }
+  }
+}
+
+#toc {
+  position: fixed;
+  min-width: 200px;
+  width: 25%;
+  left: 0px;
+  //overflow: scroll;
+  height: 100%;
+  font-size: 13px;
+  padding-left: 12px;
+
+  ul {
+    list-style: none;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+}
+
+.anchor-of-H1 {
+  margin-top: 12px;
+  font-size: 120%;
+
+  a {
+    color: #333333;
+    font-weight: 700;
+    margin-top: 12px;
+  }
+}
+
+.anchor-of-H2 {
+  margin-left: 1em;
+  font-weight: 700;
+
+  a {
+    color: #003bb3;
+  }
+}
+
+.anchor-of-H3 {
+  margin-left: 2em;
+}
+
+.anchor-of-H4 {
+  margin-left: 3em;
+}
+
+.anchor-of-H5 {
+  margin-left: 4em;
+}
+
+.anchor-of-H6 {
+  margin-left: 5em;
+}
+
+tr {
+
+  &:first-child {
+    font-weight: 700;
+  }
+
+  &:nth-child(odd) {
+    background-color:#eee;
+  }
+
+  &:nth-child(even)		{
+    background-color:#fff;
+  }
+
+  td {
+    vertical-align: top;
+    padding: 4px 8px;
+
+    &:first-child {
+      border-right: 1px solid #ddd;
+      font-weight: 700;
+    }
+  }
+
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.footnotes :target {
+  background-color: lightgreen;
+}

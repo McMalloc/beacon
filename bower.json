@@ -1,0 +1,29 @@
+{
+  "name": "beacon",
+  "authors": [
+    "Robert Wlcek <robert.wlcek@googlemail.com>"
+  ],
+  "description": "backend agnoctic content management",
+  "main": "",
+  "moduleType": [],
+  "license": "CC-BY",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "",
+    "bootstrap": "",
+    "normalize.css": "",
+    "underscore": "",
+    "highlight-js": "",
+    "backbone": "",
+    "markdown-it": "^6.0.0",
+    "markdown-it-footnote": "^2.0.0"
+  }
+}

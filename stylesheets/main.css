@@ -1,0 +1,149 @@
+/* line 3, ../sass/main.scss */
+nav ul, #toc ul {
+  margin-left: -40px;
+}
+
+@media (max-width: 991px) {
+  /* line 9, ../sass/main.scss */
+  #toc {
+    position: relative !important;
+  }
+}
+/* line 14, ../sass/main.scss */
+blockquote {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* line 19, ../sass/main.scss */
+pre {
+  background-color: white;
+  border: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+/* line 27, ../sass/main.scss */
+nav ul {
+  list-style: none;
+  margin-left: 80px;
+  margin-top: 0;
+}
+/* line 32, ../sass/main.scss */
+nav ul li {
+  display: inline;
+  margin-right: 24px;
+}
+/* line 36, ../sass/main.scss */
+nav ul li a {
+  text-decoration: none;
+  top: 30px;
+  padding: 4px;
+  color: black;
+}
+/* line 42, ../sass/main.scss */
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* line 52, ../sass/main.scss */
+#toc {
+  position: fixed;
+  min-width: 200px;
+  width: 25%;
+  left: 0px;
+  height: 100%;
+  font-size: 13px;
+  padding-left: 12px;
+}
+/* line 62, ../sass/main.scss */
+#toc ul {
+  list-style: none;
+}
+/* line 66, ../sass/main.scss */
+#toc li a {
+  text-decoration: none;
+}
+
+/* line 71, ../sass/main.scss */
+.anchor-of-H1 {
+  margin-top: 12px;
+  font-size: 120%;
+}
+/* line 75, ../sass/main.scss */
+.anchor-of-H1 a {
+  color: #333333;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+/* line 82, ../sass/main.scss */
+.anchor-of-H2 {
+  margin-left: 1em;
+  font-weight: 700;
+}
+/* line 86, ../sass/main.scss */
+.anchor-of-H2 a {
+  color: #003bb3;
+}
+
+/* line 91, ../sass/main.scss */
+.anchor-of-H3 {
+  margin-left: 2em;
+}
+
+/* line 95, ../sass/main.scss */
+.anchor-of-H4 {
+  margin-left: 3em;
+}
+
+/* line 99, ../sass/main.scss */
+.anchor-of-H5 {
+  margin-left: 4em;
+}
+
+/* line 103, ../sass/main.scss */
+.anchor-of-H6 {
+  margin-left: 5em;
+}
+
+/* line 109, ../sass/main.scss */
+tr:first-child {
+  font-weight: 700;
+}
+/* line 113, ../sass/main.scss */
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+/* line 117, ../sass/main.scss */
+tr:nth-child(even) {
+  background-color: #fff;
+}
+/* line 121, ../sass/main.scss */
+tr td {
+  vertical-align: top;
+  padding: 4px 8px;
+}
+/* line 125, ../sass/main.scss */
+tr td:first-child {
+  border-right: 1px solid #ddd;
+  font-weight: 700;
+}
+
+/* line 133, ../sass/main.scss */
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: green;
+}
+
+/* line 138, ../sass/main.scss */
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+/* line 143, ../sass/main.scss */
+.footnotes :target {
+  background-color: yellow;
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script type="application/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="application/javascript" src="bower_components/highlight-js/src/highlight.js"></script>
+    <script type="application/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="application/javascript" src="bower_components/markdown-it/dist/markdown-it.js"></script>
+    <script type="application/javascript" src="bower_components/markdown-it-footnote/dist/markdown-it-footnote.js"></script>
+
+
+    <script type="application/javascript" src="bower_components/backbone/backbone.js"></script>
+    <script type="application/javascript" src="index.js"></script>
+</head>
+<body class="container">
+
+    <nav class="row">
+    </nav>
+    <div class="row">
+
+        <div id="toc" class="col-md-3 col-xs-12">
+
+        </div>
+
+        <div id="main-content" class="col-md-offset-3 col-md-9 col-xs-12">
+
+            <!--DOM Hook for main navigation-->
+
+        </div>
+
+    </div>
+
+
+    <!--Template for main navigation-->
+    <script type="text/template" id="navigation-tmpl">
+        <ul>
+            <% _.each(navlinks, function(n) {  %>
+            <li>
+                <a data-ref="<%= n.href %>" href="<%= '#/' + n.href %>">
+                        <%= n.name %>
+                </a>
+            </li>
+            <% }); %>
+        </ul>
+    </script>
+
+    <!--Template for table of contents-->
+    <script type="text/template" id="toc-tmpl">
+        <ul>
+            <% _.each(hs, function(h) { %>
+
+            <% if (h.tag === 'H1') { %>
+                <li><ul>
+            <% } else { %>
+            <% } %>
+
+            <li class="<%= h.clss %>">
+                <a href="#<%= h.href %>">
+                    <%= h.text %>
+                </a>
+            </li>
+
+            <% if (h.tag === 'H1') { %>
+            </li></ul>
+            <% } else { %>
+            <% } %>
+
+            <% }); %>
+        </ul>
+    </script>
+
+    <script type="text/template" id="main-tmpl">
+        <h1>
+            <%= sectionHeading %>
+        </h1>
+        <% _.each(childContent, function(c) { %>
+            <section>
+
+                    <%= c.get('html') %>
+            </section>
+        <% }); %>
+
+    </script>
+
+
+
+</body>
+</html>
